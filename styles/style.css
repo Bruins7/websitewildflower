@@ -1,8 +1,10 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
 
@@ -13,19 +15,120 @@
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
+
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #111;
+	--color-background: #eee;
 }
-
-
-
-
 
 /****************/
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
+/* h1 {
+	visibility: hidden;
+}
 
+h2 {
+	font-family: Recife-Light;
+}
+
+section:nth-of-type(1) ul {
+	display: flex;
+	overflow: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	overscroll-behavior-x: contain;
+	max-width: 100%;
+}
+
+section:nth-of-type(1) ul:last-of-type {
+	border-radius: 3px;
+	position: relative;
+    white-space: nowrap;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    padding: 0 var(--s1);
+    cursor: pointer;
+    font-family: GTAmerica-Bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+section:nth-of-type(1) li {
+	flex-basis: 100%;
+  	flex-shrink: 0;
+  	scroll-snap-align: center;
+	width: 100%;
+}
+
+section:nth-of-type(1) img {
+	width: 100%;
+    display: block;
+}
+
+header img {
+	width: 155px;
+	height: 46px;
+	align-items: center;
+}
+
+img {
+	max-width: 10em;
+} */
+
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #111;
+	background: #fff;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+header {
+	background: pink;
+	text-align: center;
+	padding: 10px;
+}
+
+header img {
+	height: 30px;
+}
+
+h2 {
+	font-size: 18px;
+	margin: 20px 10px 10px;
+}
+
+section:first-of-type img {
+	width: 100%;
+	height: auto;
+}
+
+section ul {
+	display: flex;
+	overflow-x: auto;
+}
+
+section ul li {
+	flex: 0 0 50%;
+	padding: 10px;
+	text-align: center;
+}
+
+footer {
+	background: #111;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+	font-size: 12px;
+}
